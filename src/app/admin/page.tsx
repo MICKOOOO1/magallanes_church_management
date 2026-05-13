@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react';
-import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import AdminGuard from '../../components/AdminGuard';
 
@@ -216,9 +215,6 @@ export default function AdminDashboard() {
   return (
     <AdminGuard>
       <div style={styles.container}>
-        <Navbar />
-        
-        <div style={styles.mainContent}>
         <div style={styles.header}>
           <h1 style={styles.title}>Admin Dashboard</h1>
           <p style={styles.subtitle}>Manage your church operations and view analytics</p>
@@ -355,7 +351,6 @@ export default function AdminDashboard() {
         </div>
         </div>
         <Footer />
-      </div>
     </AdminGuard>
   );
 }
